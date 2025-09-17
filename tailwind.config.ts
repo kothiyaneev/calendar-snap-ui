@@ -14,6 +14,38 @@ export default {
     },
     extend: {
       colors: {
+        /* Dashboard Colors */
+        dashboard: {
+          bg: "hsl(var(--dashboard-bg))",
+          surface: "hsl(var(--dashboard-surface))",
+          card: "hsl(var(--dashboard-card))",
+          text: {
+            primary: "hsl(var(--dashboard-text-primary))",
+            secondary: "hsl(var(--dashboard-text-secondary))",
+            muted: "hsl(var(--dashboard-text-muted))",
+          },
+          accent: {
+            green: "hsl(var(--dashboard-accent-green))",
+            blue: "hsl(var(--dashboard-accent-blue))",
+            purple: "hsl(var(--dashboard-accent-purple))",
+            orange: "hsl(var(--dashboard-accent-orange))",
+            red: "hsl(var(--dashboard-accent-red))",
+          },
+          hover: "hsl(var(--dashboard-hover))",
+          focus: "hsl(var(--dashboard-focus))",
+        },
+        status: {
+          present: "hsl(var(--status-present))",
+          absent: "hsl(var(--status-absent))",
+          late: "hsl(var(--status-late))",
+          warning: "hsl(var(--status-warning))",
+        },
+        chart: {
+          primary: "hsl(var(--chart-primary))",
+          secondary: "hsl(var(--chart-secondary))",
+          tertiary: "hsl(var(--chart-tertiary))",
+        },
+        /* Standard Theme Colors */
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
