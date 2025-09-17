@@ -14,6 +14,18 @@ export default {
     },
     extend: {
       colors: {
+        /* QuickRoll Colors */
+        quickroll: {
+          primary: "hsl(var(--quickroll-primary))",
+          secondary: "hsl(var(--quickroll-secondary))",
+          orange: "hsl(var(--quickroll-orange))",
+          purple: "hsl(var(--quickroll-purple))",
+          green: "hsl(var(--quickroll-green))",
+          bg: "hsl(var(--quickroll-bg))",
+          card: "hsl(var(--quickroll-card))",
+          text: "hsl(var(--quickroll-text))",
+          gray: "hsl(var(--quickroll-gray))",
+        },
         /* Dashboard Colors */
         dashboard: {
           bg: "hsl(var(--dashboard-bg))",
