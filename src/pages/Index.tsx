@@ -1,25 +1,34 @@
 import React from 'react';
-import { QuickRollHeader } from '@/components/quickroll/QuickRollHeader';
-import { StudentManagement } from '@/components/quickroll/StudentManagement';
-import { TeacherManagement } from '@/components/quickroll/TeacherManagement';
-import { Administration } from '@/components/quickroll/Administration';
-import { QuickStats } from '@/components/quickroll/QuickStats';
+import { DashboardHeader } from '@/components/dashboard/DashboardHeader';
+import { AcademicCalendar } from '@/components/dashboard/AcademicCalendar';
+import { AttendanceOverview } from '@/components/dashboard/AttendanceOverview';
+import { RecentAttendance } from '@/components/dashboard/RecentAttendance';
+import { MonthlyTrend } from '@/components/dashboard/MonthlyTrend';
+import { Announcements } from '@/components/dashboard/Announcements';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-quickroll-bg">
-      <QuickRollHeader />
+    <div className="min-h-screen bg-dashboard-background text-dashboard-text-primary">
+      <DashboardHeader />
       
+      {/* Main Dashboard Content */}
       <main className="container mx-auto px-6 py-8 space-y-8">
-        {/* Main Management Components */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-          <StudentManagement />
-          <TeacherManagement />
-          <Administration />
+        {/* Top Statistics Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <AttendanceOverview />
+          <MonthlyTrend />
+          <Announcements />
         </div>
         
-        {/* Quick Statistics Overview */}
-        <QuickStats />
+        {/* Calendar and Recent Attendance */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-2">
+            <AcademicCalendar />
+          </div>
+          <div className="lg:col-span-1">
+            <RecentAttendance />
+          </div>
+        </div>
       </main>
     </div>
   );
